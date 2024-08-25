@@ -22,30 +22,18 @@ header {
 }
 .header-image{
     position:relative;
-}
-/* 大枠ボックス */
-.layer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .mainbg{
-  max-width: 100%;
-  overflow-x: hidden;
-  height: auto;
-  object-fit: cover;
+    max-width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    object-fit: cover;
 }
 h1, h2, h3 {
     color: #d35400;
     text-align: center;
-}
-/* 重ねる文字の基本設定 */
-.h1,.h2{
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-  color:red;
-  letter-spacing: 0.4rem;
 }
 section {
     margin-bottom: 2em;
@@ -272,10 +260,6 @@ a {
       .box__image img{
         height: 100%;
         object-fit: cover;
-        max-width: 100%;
-        overflow-x: hidden;
-        height: auto;
-        object-fit: cover;
       }
       
       @media screen and (max-width:767px){
@@ -355,3 +339,5 @@ a {
             max-width: 100%;
         }
     }
+    * { outline: 2px solid red; }
+    * { outline: 2px solid red; }
