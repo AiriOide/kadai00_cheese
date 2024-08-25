@@ -1,0 +1,343 @@
+/* ここから下に記載していく */
+h1 {
+    color: red;
+    font-size: 48px;
+}
+h2 {
+    font-size: 32px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #f4d03f;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+.header-image{
+    position:relative;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.mainbg{
+    max-width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    object-fit: cover;
+}
+h1, h2, h3 {
+    color: #d35400;
+    text-align: center;
+}
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.news-item {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-left: 5px solid #d35400;
+}
+form {
+    background-color: white;
+    padding: 1em;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #34495e;
+    color: white;
+}
+.img-left{
+    margin-right: auto;
+    display: block;
+}
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+}
+.header-title li {
+    margin-left: 40px; /* 各項目の間隔を調整 */
+}
+a {
+    color: #333;
+    text-decoration: none;
+  }
+  .about,.course,.news,.access,.contact{
+    text-align: center;
+  }
+  iframe {
+    border: 1px solid black;
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+  }
+
+  form {
+    width: 100%;
+    margin: 20% auto;
+    min-width: 12rem;
+  }
+  
+  input, textarea {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background: #e0e0e0;
+    color: #7a7a7a;
+  }
+  input[type=submit], textarea[type=submit] {
+    background: #84AD47;
+    color: #fff;
+    width: auto;
+    float: none;
+  }
+  input[type=submit]:hover, textarea[type=submit]:hover {
+    background-color: #6B8E3A;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #7a7a7a;
+  }
+  input.error, textarea.error {
+    background: #AD4747;
+    color: #fff;
+  }
+  input.error::placeholder, textarea.error::placeholder {
+    color: black;
+  }
+  
+  textarea {
+    height: 10rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+  }
+  body {
+    padding: 2rem;
+    background: #f9f9f9;
+    color: #2f2f2f;
+    font-family: "Open Sans";
+  }
+
+  .contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    color: #d35400;
+  }
+  
+  .contact h3 {
+    color: #e67e22;
+  }
+  
+  .warning {
+    color: #c0392b;
+    font-weight: bold;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 40px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .radio-group {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .radio-group li {
+    margin-bottom: 10px;
+  }
+  
+  fieldset {
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  legend {
+    padding: 0 5px;
+    color: #7f8c8d;
+  }
+
+
+  box:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse; /*左右入れ替え*/
+     }
+    
+     @media(max-width : 750px ){
+        box:nth-child(even){
+        display: block;
+         }
+    }
+    
+    box:nth-child(odd){
+      display: flex;
+       }
+    @media(max-width : 750px ){
+        box:nth-child(odd){
+       display: block;
+       }
+      }
+
+      .inner{
+        max-width: 1000px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px 20px 50px;
+      }
+      .box{
+        display: flex;
+        flex-direction: row;
+      }
+      .box + .box{
+        margin-top: 80px;
+      }
+      .box__body{
+        width: 50%;
+        padding: 0 20px;
+      }
+      .box__ttl {
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      .box__txt {
+        margin-top: 20px;
+      }
+      .box__image{
+        width: 50%;
+      }
+      .box__image img{
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      @media screen and (max-width:767px){
+        .box {
+          display: block;
+        }
+        .box + .box{
+          margin-top: 60px;
+        }
+        .box__body{
+          width: 100%;
+          padding: 0;
+        }
+        .box__image{
+          margin-top: 20px;
+          width: 80%;
+        }
+      }
+
+      .box.reverse{
+        flex-direction: row-reverse;
+        margin-left: auto;
+      }
+
+      .top-banner{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .top-banner li {
+        width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+        padding:0 5px;/*←画像の左右に5pxの余白を入れる場合*/
+        box-sizing:border-box;
+    }
+    .top-banner li img {
+        max-width:100%; /*画像のはみだしを防ぐ*/
+        height: auto; /*画像の縦横比を維持 */
+        border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
+    }
+
+    .news {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .news-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 30%;
+        flex: 1 1 30%;
+    }
+    
+    .news-item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .news h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .news article {
+        text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+        .news {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .news-item {
+            max-width: 100%;
+        }
+    }
+    * { outline: 2px solid red; }
+    * { outline: 2px solid red; }
